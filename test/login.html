@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐĂNG NHẬP</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="boday">
+            <form action="" name="form01" method="GET" enctype='multipart/form-data' onsubmit="return validateForm();">
+                <div class="auth-from">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng Nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng Ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" name="email" class="auth-form__input" onkeyup="checkInput()" placeholder="Nhập Email">
+                                <div class="valid-hide" style="margin-top: 10px;">
+                                    <span style="color: red;">Hãy nhập email</span>
+                                </div>
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" name="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+                                <div class="valid-hide" style="margin-top: 10px;">
+                                    <span style="color: red;">Hãy nhập password</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a class="auth-form__help-link">Quên Mật khẩu</a>
+                                <span class="auth-form__help-separate auth-form__help-forgot"></span>
+                                <a class="auth-form__help-link">Cần Trợ Giúp?</a>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button type="reset" class="btn auth-form__controls-back">TRỞ LẠI</button>
+                            <button type="submit" class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./valid.js"></script>
+</body>
+
+</html>
